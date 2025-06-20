@@ -1,0 +1,167 @@
+/* Reset some defaults */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.header h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: hsl(152, 95%, 46%);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1.8rem;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.input-form input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+.input-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #000;
+    color: #ff3b3b;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.input-form button:hover {
+    background-color: #08f308;
+    color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transform: scale(1.05);
+}
+
+.result-box {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f4f3f3;
+    border: 1px solid #ff3b3b;
+    padding: 1rem;
+    background: hsla(0, 20%, 2%, 0.868);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.result-box:hover {
+    color: #ff3b3b;
+    background: #1a1a1a;
+}
+
+/* Mode switch */
+
+
+/* Light mode overrides */
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+.container.light-mode {
+    background-color: #fff;
+}
+
+.input-form input[type="text"].light-mode {
+    background-color: #eee;
+    color: #000;
+}
+
+.input-form button:hover.light-mode {
+    background-color: #08f308;
+    color: #000;
+}
+
+.result-box.light-mode {
+    background: #fff;
+    color: #000;
+    border-color: #ccc;
+}
+
+/* Optional: Change navbutton style in light mode */
+
+.navigator{
+    display: grid;
+    justify-content:right;
+    margin: 5px auto;
+    padding: 5px auto;
+    font-size: 18px;
+    border-radius: 5px;
+    
+}
+
+.navbutton{
+    padding: 5px;
+    margin: 10px auto;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #ed0a0a;
+    background-color: hsla(0, 0%, 0%, 0.584);
+}
+
+.navbutton:hover{
+    padding: 5px;
+    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #ed0a0a;
+    background-color: hsla(0, 4%, 95%, 0.811);
+}
+
+.navbutton.light-mode {
+    color: #e40808;
+    background-color: #ddd;
+    padding: 5px;
+    margin: 10px auto;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.navbutton.light-mode:hover{
+    padding: 5px;
+    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #ed0a0a;
+    background-color: hsla(0, 0%, 0%, 0.811);
+}
+

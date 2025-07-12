@@ -2,6 +2,7 @@
 
 A simple web app that fetches real-time prices for cryptocurrencies and stocks using the [CoinGecko API](https://www.coingecko.com/en/api).
 
+[**Codepen Live**](https://codepen.io/onyxwizard/pen/NPGPvep) : Check out Live web view
 ## 🔍 Features
 
 - Enter a symbol (e.g., `BTC` for Bitcoin or `AAPL` for Apple)

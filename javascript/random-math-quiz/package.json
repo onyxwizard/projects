@@ -1,0 +1,14 @@
+{
+  "name": "random-math-quiz",
+  "version": "1.0.0",
+  "description": "interactive command-line quiz that tests your arithmetic skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": ["node", "cli", "math", "learning"],
+  "author": "onyxwizard",
+  "type": "commonjs",
+  "license": "MIT"
+}

@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(217, 222, 227);
+}
+
+
+.dark-mode-input{
+    visibility: hidden;
+}
+.dark-mode-label {
+    position: absolute;
+    background-color: rgba(213, 216, 218, 0.705);
+    border-radius: 25px;
+    padding: 5px;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    border: 0.5px solid rgb(218, 23, 205);
+}
+
+.circle{
+    position: absolute;
+    background-color: rgba(235, 231, 234, 0.93);
+    height: 35px;
+    width: 35px;
+    border-radius:50%;
+    left: 8px;
+    top: 6.5px;
+    cursor: pointer;
+    animation: toggleOff .4s linear forwards;
+}
+
+.dark-mode-input:checked + .dark-mode-label {
+    background-color: rgb(253, 247, 247);
+}
+
+.dark-mode-input:checked + .dark-mode-label .circle {
+    background-color: rgba(15, 17, 18, 0.914);
+    animation: toggleOn .4s linear forwards;
+}
+
+@keyframes toggleOn {
+    0%{
+        transform: translateX(0);
+        
+
+    }
+    100%{
+        transform: translateX(35px);
+        border: 0.9px solid rgb(223, 11, 138);
+        
+    }
+}
+
+
+@keyframes toggleOff {
+    0%{
+        transform: translateX(40px);
+    }
+    100%{
+        transform: translateX(0px);
+        border: 0.9px solid rgb(9, 4, 4);
+    }
+    
+}

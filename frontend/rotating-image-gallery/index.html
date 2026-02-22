@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Onyx wizard">
+    <title>Rotating Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Rotating Image Gallery</h1>
+    <div class="image-container">
+        <!-- style property -->
+        <span style="--i: 1">
+            <img src="https://picsum.photos/300/200?random=1"/>
+        </span>
+        <span style="--i: 9">
+            <img src="https://picsum.photos/300/200?random=2"/>
+        </span>
+        <span style="--i: 2">
+            <img src="https://picsum.photos/300/200?random=3"/>
+        </span>
+        <span style="--i: 3">
+            <img src="https://picsum.photos/300/200?random=14"/>
+        </span>
+        <span style="--i: 4">
+            <img src="https://picsum.photos/300/200?random=5"/>
+        </span>
+        <span style="--i: 5">
+            <img src="https://picsum.photos/300/200?random=6"/>
+        </span>
+        <span style="--i: 6">
+            <img src="https://picsum.photos/300/200?random=8"/>
+        </span>
+    </div>
+    <div class="btn-container">
+        <button class="btn" id="prev">prev</button>
+        <button class="btn" id="next">next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

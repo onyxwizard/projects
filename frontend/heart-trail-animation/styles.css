@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    /* hide the scroll bar */
+    overflow: hidden;
+}
+
+span {
+    
+    background: url("images/heart2.png");
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-size: cover;
+    /* Spanning */
+    left:50%;
+    top:50%;
+    /* Middle  */
+    transform: translate(-50%,-50%);
+    /* Pointer event */
+    pointer-events: none;
+    /* Key frames */
+    animation: heart-animate 6s linear;
+}
+
+@keyframes heart-animate {
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        /* change color */
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%,-5000%);
+        opacity: 0;
+        filter: hue-rotate(700deg);
+    }
+    
+}

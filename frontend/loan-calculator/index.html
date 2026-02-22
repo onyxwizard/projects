@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Onyx wizard">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+    <div class="container">
+        <h2>Loan Calculator</h2>
+        <p class="loan-amount">Loan Amount ₹ <input onchange="calculateLoan()" type="number" id="loanamount" min="1" max="5000000" value="1000"></p>
+        <p class="interest-rate">Interest Rate % <input onchange="calculateLoan()" type="number" id="interest-rate" min="1" max="100" value="12" step=".1"></p>
+        <p class="payback">Months To Pay <input onchange="calculateLoan()" type="number" id="monthtopay" min="6" max="48" value="7"></p>
+        <p class="monthly-amount" id="month-amount">Monthly Payment </p>
+    </div>
+<body>
+    <script src="script.js"></script>
+</body>
+
+</html>

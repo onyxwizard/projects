@@ -1,0 +1,14 @@
+{
+  "name": "personalised-greeting-cli",
+  "version": "1.0.0",
+  "description": "A simple CLI that asks for user details and prints a personalised message.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": ["node", "cli", "greeting", "learning"],
+  "author": "onyxwizard",
+  "type": "commonjs",
+  "license": "MIT"
+}

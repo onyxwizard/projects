@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanban Board</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <!-- Header with "Add Task" button -->
+  <header class="board-header">
+    <h1>My Kanban Board</h1>
+    <button id="add-task-btn" type="button">+ Add Task</button>
+  </header>
+
+  <!-- Board container: three columns side by side -->
+  <main class="board">
+    <!-- To Do column -->
+    <section class="column" data-column="todo">
+      <h2>To Do</h2>
+      <ul class="task-list" data-column="todo"></ul>
+    </section>
+
+    <!-- In Progress column -->
+    <section class="column" data-column="inprogress">
+      <h2>In Progress</h2>
+      <ul class="task-list" data-column="inprogress"></ul>
+    </section>
+
+    <!-- Done column -->
+    <section class="column" data-column="done">
+      <h2>Done</h2>
+      <ul class="task-list" data-column="done"></ul>
+    </section>
+  </main>
+
+  <!-- The Modal Overlay (Background) -->
+  <div id="modalOverlay" class="modal-overlay">
+
+    <!-- The Modal Content Box -->
+    <div class="modal-box">
+      <button id="closeModalBtn" class="close-btn">&times;</button>
+      <h2>Create a New Task</h2>
+      <p>Enter the details of your task below.</p>
+
+      <!-- Example Form inside modal -->
+      <input type="text" id="task-model-input" placeholder="Task title...">
+      <select id="task-model-option">
+        <option value="todo">Todo</option>
+        <option value="inprogress">In Progress</option>
+        <option value="done">Done</option>
+      </select>
+      <button type="submit" id="create">Create</button>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
